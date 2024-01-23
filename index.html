@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo5").innerHTML = "Paragraph changed.";
+        }
+    </script>
+</head>
+<body>
+    
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click</button>
+
+    <p id="demo"></p>
+
+
+    <p id="demo1">JavaScript can change HTML content.</p>
+    <button type="button" onclick='document.getElementById("demo1").innerText = "Hello JavaScript!"'>Click Me</button>
+
+
+    <p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button  onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+
+<button type="button" onclick="document.getElementById('demo2').style.fontSize='35px'">Click ME!</button>
+
+<p id="demo2">JavaScript can change the style of an HTML element.</p>
+
+
+<!-- hide content -->
+<button onclick="document.getElementById('demo3').style.display='none'">Display</button>
+<p id="demo3">Lorem, ipsum dolor.</p>
+
+<!-- visible content -->
+<button onclick="document.getElementById('demo4').style.display='block'">Display</button>
+<p id="demo4" style="display: none;">Lorem, ipsum.</p>
+
+<!-- function -->
+<p id="demo5">A Paragraph</p>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo6">Paragraph</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<!-- <script>
+function myFunction() {
+  document.getElementById("demo6").innerHTML = "lorem .";
+}
+</script> -->
+
+<p id="demo7">Lorem ipsum dolor sit amet consectetur.</p>
+<button type="button" onclick="demoFunction()">Try it</button>
+<!-- <script src="script.js"></script> -->
+<!-- <script src="variable.js"></script> -->
+
+</body>
+</html>
